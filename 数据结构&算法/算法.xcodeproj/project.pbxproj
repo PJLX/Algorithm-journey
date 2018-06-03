@@ -49,7 +49,6 @@
 		C9111FE420A04452008D808C /* DFS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DFS.m; sourceTree = "<group>"; };
 		C935145B209F1C0900283552 /* knapsackProblem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = knapsackProblem.h; sourceTree = "<group>"; };
 		C935145C209F1C0900283552 /* knapsackProblem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = knapsackProblem.m; sourceTree = "<group>"; };
-		C93CDF1320A2910B001799CF /* dfs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dfs.jpg; path = ../../personal/Flow/dfs.jpg; sourceTree = "<group>"; };
 		C961EA8E209D67F4002E2E1A /* quickSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = quickSort.h; sourceTree = "<group>"; };
 		C961EA8F209D67F4002E2E1A /* quickSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = quickSort.m; sourceTree = "<group>"; };
 		C961EA91209D9F5B002E2E1A /* BFS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFS.h; sourceTree = "<group>"; };
@@ -68,6 +67,7 @@
 		C9721EEA209EC3D000758CD6 /* Dijkstras.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dijkstras.m; sourceTree = "<group>"; };
 		C9721EED209EE8FF00758CD6 /* greedyAlgorithm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = greedyAlgorithm.h; sourceTree = "<group>"; };
 		C9721EEE209EE8FF00758CD6 /* greedyAlgorithm.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = greedyAlgorithm.m; sourceTree = "<group>"; };
+		C9D1039E20C3D0AB00FB68FD /* dfs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dfs.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +120,7 @@
 				C961EAA0209E8F19002E2E1A /* bfs.jpg */,
 				C9111FE320A04452008D808C /* DFS.h */,
 				C9111FE420A04452008D808C /* DFS.m */,
-				C93CDF1320A2910B001799CF /* dfs.jpg */,
+				C9D1039E20C3D0AB00FB68FD /* dfs.jpg */,
 				C9721EE9209EC3D000758CD6 /* Dijkstras.h */,
 				C9721EEA209EC3D000758CD6 /* Dijkstras.m */,
 				C9721EE8209EC39B00758CD6 /* Dijkstras.jpg */,

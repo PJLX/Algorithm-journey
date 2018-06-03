@@ -125,6 +125,35 @@ LNode* reverse(LNode *head){
 
 // head -> a -> b -> c     null <- a <- b -> c     a <- b <- c    a <- b <- c <- head
 
+/**
+ 删除链表的倒数第N个节点
+ 节点数大于n，假如n=2
+ 1，2，3，4，5，null
+ 1，2，3，5，null
+ 定义两个节点fast和slow均指向链表的第一个节点,先让fast走n步指到链表的第n+1个节点，之后两个节点同步前进直到fast到达最后一个节点,此时slow就是倒数第n+1个节点
+ @param head 头节点
+ @param n 倒数第n个元素索引
+ @return 头节点
+ */
+LNode* removeNthFromEnd(LNode *head, int n){
+    LNode *fast = head->next;
+    LNode *slow = head->next;
+    int count = 1;
+    while (fast != NULL) {
+        fast = fast->next;
+        if (count > n) {
+            slow = slow->next;
+        }
+        count++;
+    }
+    
+    LNode *toDeleteNode = slow->next;
+    slow->next = toDeleteNode->next;
+    free(toDeleteNode);
+    
+    return head;
+}
+
 #pragma mark- 链表-双向链表
 typedef struct DuLNode{
     int val;
