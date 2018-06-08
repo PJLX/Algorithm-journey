@@ -1,6 +1,6 @@
 //
 //  knapsackProblem.m
-//  算法
+//  算法-动态规划
 //
 //  Created by 李响 on 2018/5/6.
 //  Copyright © 2018年 LiXiang. All rights reserved.
@@ -44,11 +44,14 @@
                                   @"c": @4,
                                   @"d": @2,
                                   };
-    NSInteger size = 7;
-    NSInteger maxValue = [self findMaxminumValueWithKnapsackSize:size graphValue:self.graphValue graphWeight:self.graphWeight];
-    self.selectedGoods = [NSMutableArray new];
-    [self findGoodsWithRow:self.graphValue.allKeys.count-1 list:size - 1 maxValue:maxValue];
-    NSLog(@"%@",self.selectedGoods);
+//    NSInteger size = 7;
+//    NSInteger maxValue = [self findMaxminumValueWithKnapsackSize:size graphValue:self.graphValue graphWeight:self.graphWeight];
+//    self.selectedGoods = [NSMutableArray new];
+//    [self findGoodsWithRow:self.graphValue.allKeys.count-1 list:size - 1 maxValue:maxValue];
+//    NSLog(@"%@",self.selectedGoods);
+    
+    
+    [self maxSubStringBetweenA:@"foisha" andB:@"fish"];
 }
 
 /**
@@ -133,5 +136,62 @@
         }
     }
 }
+
+/**
+ 最长/大公共子串
+       f o s h i
+     f
+     i
+     s
+     h
+
+ @param a a
+ @param b b
+ @return 最长/大公共子串
+ */
+- (NSString *)maxSubStringBetweenA:(NSString *)a andB:(NSString *)b{
+    NSUInteger lengthA = a.length;
+    NSUInteger lengthB = b.length;
+    
+    self.gridding = [NSMutableArray new];
+    
+    NSUInteger max = 0;
+    NSUInteger maxI = 0;
+    
+    for (NSUInteger i = 0; i < lengthA; i++) {
+        NSMutableArray<NSNumber*> *rowArr = [NSMutableArray new];
+
+        for (NSUInteger j = 0; j < lengthB; j++) {
+            NSString *subA = [a substringWithRange:NSMakeRange(i, 1)];
+            NSString *subB = [b substringWithRange:NSMakeRange(j, 1)];
+            if ([subA isEqualToString:subB]) {
+                [rowArr addObject:@([self itemInI:i-1 j:j-1].integerValue + 1)];
+                if (rowArr[j].integerValue > max) {
+                    max = rowArr[j].integerValue;
+                    maxI = i;
+                }
+            } else {
+                [rowArr addObject:@(0)];
+            }
+        }
+        
+        [self.gridding addObject:rowArr];
+    }
+    
+    NSString *maxSubString = [a substringWithRange:NSMakeRange(maxI - max + 1, max)];
+    NSLog(@"%@",maxSubString);
+    return maxSubString;
+}
+
+- (NSNumber *)itemInI:(NSInteger)i j:(NSInteger)j{
+    if (i < 0 || j < 0) {
+        return @(0);
+    } else {
+        return self.gridding[i][j];
+    }
+}
+
+#pragma mark - 最长公共子序列
+
 
 @end
