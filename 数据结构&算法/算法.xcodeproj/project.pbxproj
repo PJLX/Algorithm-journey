@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		C9050FB0209C997B00568CB2 /* binary_search.m in Sources */ = {isa = PBXBuildFile; fileRef = C9050FAF209C997B00568CB2 /* binary_search.m */; };
-		C9050FB4209CA1BE00568CB2 /* selectionSort.m in Sources */ = {isa = PBXBuildFile; fileRef = C9050FB2209CA1BE00568CB2 /* selectionSort.m */; };
 		C90DFBCF207764A000C95AA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C90DFBCE207764A000C95AA8 /* main.m */; };
 		C9111FE120A02354008D808C /* skiResortProblem.m in Sources */ = {isa = PBXBuildFile; fileRef = C9111FE020A02354008D808C /* skiResortProblem.m */; };
 		C9111FE520A04452008D808C /* DFS.m in Sources */ = {isa = PBXBuildFile; fileRef = C9111FE420A04452008D808C /* DFS.m */; };
+		C92538F420CB76BD00370351 /* AVL.m in Sources */ = {isa = PBXBuildFile; fileRef = C92538F220CB76BD00370351 /* AVL.m */; };
+		C92538FA20CBC2A400370351 /* Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = C92538F920CBC2A400370351 /* Sort.m */; };
 		C935145E209F1C0900283552 /* knapsackProblem.m in Sources */ = {isa = PBXBuildFile; fileRef = C935145C209F1C0900283552 /* knapsackProblem.m */; };
-		C961EA90209D67F4002E2E1A /* quickSort.m in Sources */ = {isa = PBXBuildFile; fileRef = C961EA8F209D67F4002E2E1A /* quickSort.m */; };
 		C961EA93209D9F5B002E2E1A /* BFS.m in Sources */ = {isa = PBXBuildFile; fileRef = C961EA92209D9F5B002E2E1A /* BFS.m */; };
 		C961EA96209D9FD5002E2E1A /* linkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = C961EA95209D9FD5002E2E1A /* linkedList.m */; };
 		C961EA99209DA007002E2E1A /* stack.m in Sources */ = {isa = PBXBuildFile; fileRef = C961EA98209DA007002E2E1A /* stack.m */; };
@@ -38,8 +38,6 @@
 /* Begin PBXFileReference section */
 		C9050FAE209C997B00568CB2 /* binary_search.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = binary_search.h; sourceTree = "<group>"; };
 		C9050FAF209C997B00568CB2 /* binary_search.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = binary_search.m; sourceTree = "<group>"; };
-		C9050FB1209CA1BE00568CB2 /* selectionSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = selectionSort.h; sourceTree = "<group>"; };
-		C9050FB2209CA1BE00568CB2 /* selectionSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = selectionSort.m; sourceTree = "<group>"; };
 		C90DFBCB207764A000C95AA8 /* 算法 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "算法"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90DFBCE207764A000C95AA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C9111FDF20A02354008D808C /* skiResortProblem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = skiResortProblem.h; sourceTree = "<group>"; };
@@ -47,10 +45,12 @@
 		C9111FE220A02395008D808C /* 滑雪场问题.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "滑雪场问题.jpg"; sourceTree = "<group>"; };
 		C9111FE320A04452008D808C /* DFS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFS.h; sourceTree = "<group>"; };
 		C9111FE420A04452008D808C /* DFS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DFS.m; sourceTree = "<group>"; };
+		C92538F120CB76BD00370351 /* AVL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVL.h; sourceTree = "<group>"; };
+		C92538F220CB76BD00370351 /* AVL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVL.m; sourceTree = "<group>"; };
+		C92538F820CBC2A400370351 /* Sort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sort.h; sourceTree = "<group>"; };
+		C92538F920CBC2A400370351 /* Sort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sort.m; sourceTree = "<group>"; };
 		C935145B209F1C0900283552 /* knapsackProblem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = knapsackProblem.h; sourceTree = "<group>"; };
 		C935145C209F1C0900283552 /* knapsackProblem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = knapsackProblem.m; sourceTree = "<group>"; };
-		C961EA8E209D67F4002E2E1A /* quickSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = quickSort.h; sourceTree = "<group>"; };
-		C961EA8F209D67F4002E2E1A /* quickSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = quickSort.m; sourceTree = "<group>"; };
 		C961EA91209D9F5B002E2E1A /* BFS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFS.h; sourceTree = "<group>"; };
 		C961EA92209D9F5B002E2E1A /* BFS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFS.m; sourceTree = "<group>"; };
 		C961EA94209D9FD5002E2E1A /* linkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = linkedList.h; sourceTree = "<group>"; };
@@ -109,12 +109,12 @@
 				C961EA98209DA007002E2E1A /* stack.m */,
 				C961EA9D209DA0AC002E2E1A /* binTree.h */,
 				C961EA9E209DA0AC002E2E1A /* binTree.m */,
+				C92538F120CB76BD00370351 /* AVL.h */,
+				C92538F220CB76BD00370351 /* AVL.m */,
 				C9050FAE209C997B00568CB2 /* binary_search.h */,
 				C9050FAF209C997B00568CB2 /* binary_search.m */,
-				C9050FB1209CA1BE00568CB2 /* selectionSort.h */,
-				C9050FB2209CA1BE00568CB2 /* selectionSort.m */,
-				C961EA8E209D67F4002E2E1A /* quickSort.h */,
-				C961EA8F209D67F4002E2E1A /* quickSort.m */,
+				C92538F820CBC2A400370351 /* Sort.h */,
+				C92538F920CBC2A400370351 /* Sort.m */,
 				C961EA91209D9F5B002E2E1A /* BFS.h */,
 				C961EA92209D9F5B002E2E1A /* BFS.m */,
 				C961EAA0209E8F19002E2E1A /* bfs.jpg */,
@@ -192,17 +192,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9111FE120A02354008D808C /* skiResortProblem.m in Sources */,
+				C92538FA20CBC2A400370351 /* Sort.m in Sources */,
 				C961EAA3209EA50D002E2E1A /* queue.m in Sources */,
 				C935145E209F1C0900283552 /* knapsackProblem.m in Sources */,
 				C9050FB0209C997B00568CB2 /* binary_search.m in Sources */,
-				C9050FB4209CA1BE00568CB2 /* selectionSort.m in Sources */,
 				C9111FE520A04452008D808C /* DFS.m in Sources */,
 				C961EA9F209DA0AC002E2E1A /* binTree.m in Sources */,
 				C961EA93209D9F5B002E2E1A /* BFS.m in Sources */,
 				C90DFBCF207764A000C95AA8 /* main.m in Sources */,
+				C92538F420CB76BD00370351 /* AVL.m in Sources */,
 				C961EA96209D9FD5002E2E1A /* linkedList.m in Sources */,
 				C9721EEC209EC3D000758CD6 /* Dijkstras.m in Sources */,
-				C961EA90209D67F4002E2E1A /* quickSort.m in Sources */,
 				C961EA99209DA007002E2E1A /* stack.m in Sources */,
 				C9721EEF209EE8FF00758CD6 /* greedyAlgorithm.m in Sources */,
 			);

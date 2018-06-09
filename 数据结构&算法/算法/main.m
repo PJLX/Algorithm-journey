@@ -7,10 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "linkedList.h"
+#import "queue.h"
 #import "stack.h"
+#import "binTree.h"
+#import "AVL.h"
 #import "binary_search.h"
-#import "selectionSort.h"
-#import "quickSort.h"
+#import "Sort.h"
 #import "BFS.h"
 #import "DFS.h"
 #import "Dijkstras.h"
@@ -22,7 +25,7 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        DFS *a = [DFS new];
+        Sort *a = [Sort new];
         [a viewDidLoad];
         
     }

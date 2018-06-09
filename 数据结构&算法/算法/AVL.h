@@ -1,13 +1,13 @@
 //
-//  selectionSort.h
+//  AVL.h
 //  算法
 //
-//  Created by 李响 on 2018/5/4.
+//  Created by 李响 on 2018/6/9.
 //  Copyright © 2018年 LiXiang. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
 
-@interface selectionSort : NSViewController
+@interface AVL : NSViewController
 
 @end
