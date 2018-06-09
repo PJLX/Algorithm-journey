@@ -12,8 +12,8 @@
 
 @property (nonatomic, strong) NSMutableArray<NSMutableArray<NSNumber*>*> *gridding;
 @property (nonatomic, strong) NSMutableArray *selectedGoods;
-@property (nonatomic, strong) NSDictionary<NSString*, NSNumber*> *graphValue;
-@property (nonatomic, strong) NSDictionary<NSString*, NSNumber*> *graphWeight;
+@property (nonatomic, copy) NSDictionary<NSString*, NSNumber*> *graphValue;
+@property (nonatomic, copy) NSDictionary<NSString*, NSNumber*> *graphWeight;
 @end
 
 @implementation knapsackProblem
@@ -51,7 +51,7 @@
 //    NSLog(@"%@",self.selectedGoods);
     
     
-    [self maxSubStringBetweenA:@"foisha" andB:@"fish"];
+    [self maxsSubSequenceBetweenA:@"foisha" andB:@"fish"];
 }
 
 /**
@@ -144,6 +144,10 @@
      i
      s
      h
+ if a[i] == b[j]
+ cell[i][j] = cell[i-1][j-1] + 1;
+ else
+ cell[i][j] = 0;
 
  @param a a
  @param b b
@@ -155,6 +159,7 @@
     
     self.gridding = [NSMutableArray new];
     
+    //记录最长子串最后一个字符的位置
     NSUInteger max = 0;
     NSUInteger maxI = 0;
     
@@ -183,15 +188,52 @@
     return maxSubString;
 }
 
+/**
+ 求两个字符串的最长公共子序列，子序列表示相同的字符串的总长度，相对于公共子串更能表示字符串间的相似程度
+ if a[i] == b[j]
+ cell[i][j] = cell[i-1][j-1] + 1;
+ else
+ cell[i][j] = max(cell[i-1][j], cell[i][j-1]);
+ 
+ @param a a
+ @param b b
+ */
+- (void)maxsSubSequenceBetweenA:(NSString *)a andB:(NSString *)b{
+    NSUInteger lengthA = a.length;
+    NSUInteger lengthB = b.length;
+    
+    self.gridding = [[NSMutableArray alloc] initWithCapacity:lengthA*lengthB];
+    
+    for (NSUInteger i = 0; i < lengthA; i++) {
+        NSMutableArray<NSNumber*> *rowArr = [NSMutableArray new];
+        
+        for (NSUInteger j = 0; j < lengthB; j++) {
+            NSString *subA = [a substringWithRange:NSMakeRange(i, 1)];
+            NSString *subB = [b substringWithRange:NSMakeRange(j, 1)];
+            if ([subA isEqualToString:subB]) {
+                [rowArr addObject:@([self itemInI:i-1 j:j-1].integerValue + 1)];
+            } else {
+                NSUInteger max = MAX([self itemInI:i-1 j:j].integerValue, [self itemInI:i j:j-1].integerValue);
+                [rowArr addObject:@(max)];
+            }
+        }
+        
+        [self.gridding addObject:rowArr];
+    }
+    
+    NSLog(@"%@",self.gridding);
+}
+
 - (NSNumber *)itemInI:(NSInteger)i j:(NSInteger)j{
     if (i < 0 || j < 0) {
         return @(0);
-    } else {
-        return self.gridding[i][j];
     }
+    
+    if (!self.gridding.count || self.gridding.count - 1 < i) {
+        return @(0);
+    }
+    
+    return self.gridding[i][j];
 }
-
-#pragma mark - 最长公共子序列
-
 
 @end
