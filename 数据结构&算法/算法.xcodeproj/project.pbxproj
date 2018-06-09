@@ -13,7 +13,7 @@
 		C9111FE520A04452008D808C /* DFS.m in Sources */ = {isa = PBXBuildFile; fileRef = C9111FE420A04452008D808C /* DFS.m */; };
 		C92538F420CB76BD00370351 /* AVL.m in Sources */ = {isa = PBXBuildFile; fileRef = C92538F220CB76BD00370351 /* AVL.m */; };
 		C92538FA20CBC2A400370351 /* Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = C92538F920CBC2A400370351 /* Sort.m */; };
-		C935145E209F1C0900283552 /* knapsackProblem.m in Sources */ = {isa = PBXBuildFile; fileRef = C935145C209F1C0900283552 /* knapsackProblem.m */; };
+		C92538FD20CBD58400370351 /* dynamicProgramming.m in Sources */ = {isa = PBXBuildFile; fileRef = C92538FC20CBD58400370351 /* dynamicProgramming.m */; };
 		C961EA93209D9F5B002E2E1A /* BFS.m in Sources */ = {isa = PBXBuildFile; fileRef = C961EA92209D9F5B002E2E1A /* BFS.m */; };
 		C961EA96209D9FD5002E2E1A /* linkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = C961EA95209D9FD5002E2E1A /* linkedList.m */; };
 		C961EA99209DA007002E2E1A /* stack.m in Sources */ = {isa = PBXBuildFile; fileRef = C961EA98209DA007002E2E1A /* stack.m */; };
@@ -49,8 +49,8 @@
 		C92538F220CB76BD00370351 /* AVL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVL.m; sourceTree = "<group>"; };
 		C92538F820CBC2A400370351 /* Sort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sort.h; sourceTree = "<group>"; };
 		C92538F920CBC2A400370351 /* Sort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sort.m; sourceTree = "<group>"; };
-		C935145B209F1C0900283552 /* knapsackProblem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = knapsackProblem.h; sourceTree = "<group>"; };
-		C935145C209F1C0900283552 /* knapsackProblem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = knapsackProblem.m; sourceTree = "<group>"; };
+		C92538FB20CBD58400370351 /* dynamicProgramming.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dynamicProgramming.h; sourceTree = "<group>"; };
+		C92538FC20CBD58400370351 /* dynamicProgramming.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dynamicProgramming.m; sourceTree = "<group>"; };
 		C961EA91209D9F5B002E2E1A /* BFS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFS.h; sourceTree = "<group>"; };
 		C961EA92209D9F5B002E2E1A /* BFS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFS.m; sourceTree = "<group>"; };
 		C961EA94209D9FD5002E2E1A /* linkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = linkedList.h; sourceTree = "<group>"; };
@@ -111,10 +111,10 @@
 				C961EA9E209DA0AC002E2E1A /* binTree.m */,
 				C92538F120CB76BD00370351 /* AVL.h */,
 				C92538F220CB76BD00370351 /* AVL.m */,
-				C9050FAE209C997B00568CB2 /* binary_search.h */,
-				C9050FAF209C997B00568CB2 /* binary_search.m */,
 				C92538F820CBC2A400370351 /* Sort.h */,
 				C92538F920CBC2A400370351 /* Sort.m */,
+				C9050FAE209C997B00568CB2 /* binary_search.h */,
+				C9050FAF209C997B00568CB2 /* binary_search.m */,
 				C961EA91209D9F5B002E2E1A /* BFS.h */,
 				C961EA92209D9F5B002E2E1A /* BFS.m */,
 				C961EAA0209E8F19002E2E1A /* bfs.jpg */,
@@ -126,8 +126,8 @@
 				C9721EE8209EC39B00758CD6 /* Dijkstras.jpg */,
 				C9721EED209EE8FF00758CD6 /* greedyAlgorithm.h */,
 				C9721EEE209EE8FF00758CD6 /* greedyAlgorithm.m */,
-				C935145B209F1C0900283552 /* knapsackProblem.h */,
-				C935145C209F1C0900283552 /* knapsackProblem.m */,
+				C92538FB20CBD58400370351 /* dynamicProgramming.h */,
+				C92538FC20CBD58400370351 /* dynamicProgramming.m */,
 				C9111FDF20A02354008D808C /* skiResortProblem.h */,
 				C9111FE020A02354008D808C /* skiResortProblem.m */,
 				C9111FE220A02395008D808C /* 滑雪场问题.jpg */,
@@ -193,8 +193,8 @@
 			files = (
 				C9111FE120A02354008D808C /* skiResortProblem.m in Sources */,
 				C92538FA20CBC2A400370351 /* Sort.m in Sources */,
+				C92538FD20CBD58400370351 /* dynamicProgramming.m in Sources */,
 				C961EAA3209EA50D002E2E1A /* queue.m in Sources */,
-				C935145E209F1C0900283552 /* knapsackProblem.m in Sources */,
 				C9050FB0209C997B00568CB2 /* binary_search.m in Sources */,
 				C9111FE520A04452008D808C /* DFS.m in Sources */,
 				C961EA9F209DA0AC002E2E1A /* binTree.m in Sources */,
