@@ -1,0 +1,2 @@
+# Algorithm-journey
+common algorithm
